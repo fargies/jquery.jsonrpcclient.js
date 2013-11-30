@@ -93,6 +93,7 @@
       type     : 'POST',
       url      : this.options.ajaxUrl,
       data     : $.toJSON(request),
+      contentType : 'application/json',
       dataType : 'json',
       cache    : false,
 
@@ -152,6 +153,7 @@
       type     : 'POST',
       url      : this.options.ajaxUrl,
       data     : $.toJSON(request),
+      contentType : 'application/json',
       dataType : 'json',
       cache    : false
     });
@@ -397,6 +399,7 @@
     $.ajax({
       url      : self.jsonrpcclient.options.ajaxUrl,
       data     : $.toJSON(batch_request),
+      contentType : 'application/json',
       dataType : 'json',
       cache    : false,
       type     : 'POST',
